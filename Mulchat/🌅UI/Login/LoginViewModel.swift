@@ -1,17 +1,17 @@
 //
-//  ViewController.swift
+//  LoginViewModel.swift
 //  Mulchat
 //
 //  Created by Nebo on 26.08.2024.
 //
 
-import UIKit
+import Foundation
 
-class ViewController: UIViewController {
-
+final class LoginViewModel: BaseViewModel {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = . systemYellow
+        
+        print(#function)
     }
 }
-
