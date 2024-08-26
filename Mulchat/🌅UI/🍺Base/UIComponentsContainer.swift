@@ -12,7 +12,7 @@ protocol UIComponentContainerProtocol {
     var container: Container { get }
 }
 
-class UIComponentsContainer: UIComponentContainerProtocol {
+final class UIComponentsContainer: UIComponentContainerProtocol {
     
     static let shared = UIComponentsContainer()
     

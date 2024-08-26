@@ -7,6 +7,6 @@
 
 import Foundation
 
-class LoginViewController: BaseViewController<LoginViewModel, LoginView> {
+final class LoginViewController: BaseViewController<LoginViewModel, LoginView> {
     
 }
