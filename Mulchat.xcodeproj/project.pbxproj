@@ -20,6 +20,13 @@
 		8E1830802C7D0363002EEF6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18307F2C7D0363002EEF6B /* LoginViewController.swift */; };
 		8E1830822C7D0370002EEF6B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1830812C7D0370002EEF6B /* LoginViewModel.swift */; };
 		8E1830842C7D037B002EEF6B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1830832C7D037B002EEF6B /* LoginView.swift */; };
+		8E1830872C7D1FC1002EEF6B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8E1830862C7D1FC1002EEF6B /* SnapKit */; };
+		8E18308B2C7D2455002EEF6B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18308A2C7D2455002EEF6B /* Colors.swift */; };
+		8E18308D2C7D2602002EEF6B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18308C2C7D2602002EEF6B /* Fonts.swift */; };
+		8E1830932C7D27FC002EEF6B /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E18308F2C7D27FB002EEF6B /* Ubuntu-Regular.ttf */; };
+		8E1830942C7D27FC002EEF6B /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E1830902C7D27FC002EEF6B /* Ubuntu-Light.ttf */; };
+		8E1830952C7D27FC002EEF6B /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E1830912C7D27FC002EEF6B /* Ubuntu-Bold.ttf */; };
+		8E1830962C7D27FC002EEF6B /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E1830922C7D27FC002EEF6B /* Ubuntu-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +57,12 @@
 		8E18307F2C7D0363002EEF6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8E1830812C7D0370002EEF6B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8E1830832C7D037B002EEF6B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8E18308A2C7D2455002EEF6B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8E18308C2C7D2602002EEF6B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		8E18308F2C7D27FB002EEF6B /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		8E1830902C7D27FC002EEF6B /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		8E1830912C7D27FC002EEF6B /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		8E1830922C7D27FC002EEF6B /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E18307A2C7CFED7002EEF6B /* Swinject in Frameworks */,
+				8E1830872C7D1FC1002EEF6B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +130,8 @@
 				8E1830552C7CD696002EEF6B /* Colors.xcassets */,
 				8E1830632C7CD9F5002EEF6B /* Images.xcassets */,
 				8E1830572C7CD696002EEF6B /* LaunchScreen.storyboard */,
+				8E18308A2C7D2455002EEF6B /* Colors.swift */,
+				8E18308E2C7D2777002EEF6B /* Fonts */,
 			);
 			path = "💰Resources";
 			sourceTree = "<group>";
@@ -148,6 +164,18 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		8E18308E2C7D2777002EEF6B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8E1830912C7D27FC002EEF6B /* Ubuntu-Bold.ttf */,
+				8E1830902C7D27FC002EEF6B /* Ubuntu-Light.ttf */,
+				8E1830922C7D27FC002EEF6B /* Ubuntu-Medium.ttf */,
+				8E18308F2C7D27FB002EEF6B /* Ubuntu-Regular.ttf */,
+				8E18308C2C7D2602002EEF6B /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +195,7 @@
 			name = Mulchat;
 			packageProductDependencies = (
 				8E1830792C7CFED7002EEF6B /* Swinject */,
+				8E1830862C7D1FC1002EEF6B /* SnapKit */,
 			);
 			productName = Mulchat;
 			productReference = 8E1830492C7CD695002EEF6B /* Mulchat.app */;
@@ -198,6 +227,7 @@
 			mainGroup = 8E1830402C7CD695002EEF6B;
 			packageReferences = (
 				8E1830782C7CFED7002EEF6B /* XCRemoteSwiftPackageReference "Swinject" */,
+				8E1830852C7D1FC1002EEF6B /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 8E18304A2C7CD695002EEF6B /* Products */;
 			projectDirPath = "";
@@ -213,7 +243,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1830932C7D27FC002EEF6B /* Ubuntu-Regular.ttf in Resources */,
 				8E1830642C7CD9F5002EEF6B /* Images.xcassets in Resources */,
+				8E1830962C7D27FC002EEF6B /* Ubuntu-Medium.ttf in Resources */,
+				8E1830952C7D27FC002EEF6B /* Ubuntu-Bold.ttf in Resources */,
+				8E1830942C7D27FC002EEF6B /* Ubuntu-Light.ttf in Resources */,
 				8E1830562C7CD696002EEF6B /* Colors.xcassets in Resources */,
 				8E1830592C7CD696002EEF6B /* Base in Resources */,
 			);
@@ -227,12 +261,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E1830692C7CF921002EEF6B /* BaseViewModel.swift in Sources */,
+				8E18308B2C7D2455002EEF6B /* Colors.swift in Sources */,
 				8E1830672C7CF918002EEF6B /* BaseViewController.swift in Sources */,
 				8E18306B2C7CF929002EEF6B /* BaseView.swift in Sources */,
 				8E1830802C7D0363002EEF6B /* LoginViewController.swift in Sources */,
 				8E18304D2C7CD695002EEF6B /* AppDelegate.swift in Sources */,
 				8E18306D2C7CFD2F002EEF6B /* UIComponentsContainer.swift in Sources */,
 				8E18304F2C7CD695002EEF6B /* SceneDelegate.swift in Sources */,
+				8E18308D2C7D2602002EEF6B /* Fonts.swift in Sources */,
 				8E1830842C7D037B002EEF6B /* LoginView.swift in Sources */,
 				8E1830822C7D0370002EEF6B /* LoginViewModel.swift in Sources */,
 			);
@@ -459,6 +495,14 @@
 				minimumVersion = 2.9.1;
 			};
 		};
+		8E1830852C7D1FC1002EEF6B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -466,6 +510,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8E1830782C7CFED7002EEF6B /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		8E1830862C7D1FC1002EEF6B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E1830852C7D1FC1002EEF6B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
