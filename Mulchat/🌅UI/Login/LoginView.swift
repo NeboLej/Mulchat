@@ -15,7 +15,7 @@ final class LoginView: BaseView {
         view.setColors(colors: [.MC.background_2, .MC.accent_1])
         return view
     }()
-  
+    
     private lazy var firstHalfTitleLab: UILabel = {
         let label = UILabel(text: "MUL", color: UIColor.MC.textLight, font: .get(type: .ubuntuRegular, size: 40))
         label.textAlignment = .right
@@ -56,53 +56,38 @@ final class LoginView: BaseView {
 }
 
 
-class Particle {
-    let startPoint: CGPoint
-    let color: UIColor
-    
-    init(startPoint: CGPoint, color: UIColor) {
-        self.startPoint = startPoint
-        self.color = color
-    }
-}
-
 class StarShipView: UIView {
     
-    private var views: [UIView] = []
+    private lazy var views: [UIView] = []
     
-    func start() {
-        
-        views.forEach {
-            $0.removeFromSuperview()
-            $0.layer.removeAllAnimations() }
-        
-        let particles = (1...1000).map { _ in Particle(startPoint: .init(x: .random(in: 0...bounds.maxX), y: .random(in: 0...bounds.maxY)),
-                                                  color: UIColor.MC.accent_1 )}
-        
-//        let particles = (1...10000).map { _ in Particle(startPoint: .init(x: .random(in: (bounds.midX - 30)...(bounds.midX + 30)),
-//                                                                     y: .random(in: (bounds.midY - 30)...(bounds.midY + 30))),
-//                                                   color: .white) }
-        views = particles.map {
+    private func createParticles(count: Int) -> [UIView] {
+        let views =  (1...count).map { _ in
             let view = UIView()
-            view.isHidden = true
-            view.backgroundColor = $0.color
-            view.frame = .init(origin: $0.startPoint, size: .init(width: 1, height: 1))
+            view.backgroundColor = UIColor.MC.accent_1
+            view.frame = .init(origin: CGPoint(x: .random(in: 0...bounds.maxX), y: .random(in: 0...bounds.maxY)),
+                               size: .init(width: 1, height: 1))
             return view
         }
-        
         addSubviews(views)
+        return views
+    }
+
+    
+    func start() {
+        views.forEach { 
+            $0.layer.removeAllAnimations()
+            $0.removeFromSuperview()
+        }
+        
+        views = createParticles(count: 1000)
         
         views.forEach { star in
             UIView.animate(withDuration: 30, delay: .random(in: 0...30), options: [.repeat]) {
-                star.isHidden = false
-                star.center = self.getEndPoint(startPoint: star.center)
+                star.center = CGPoint(x: star.center.x, y: self.bounds.maxY + 100)
                 star.alpha = 0
+                print(star.frame)
             }
         }
     }
-    
-    func getEndPoint(startPoint: CGPoint) -> CGPoint {
-        CGPoint(x: startPoint.x, y: bounds.maxY + 100)
-//        CGPoint(x: .random(in: (bounds.minX...bounds.maxX)), y: bounds.maxY + 10)
-    }
 }
+

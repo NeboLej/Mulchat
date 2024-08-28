@@ -16,8 +16,9 @@ final class LoginViewController: BaseViewController<LoginViewModel, LoginView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        rootView.stars.start()
+        rootView.stars.start()
     }
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
