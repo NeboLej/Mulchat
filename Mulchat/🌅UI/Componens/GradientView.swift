@@ -15,7 +15,11 @@ final class GradientView: UIView {
         case custom(start: CGPoint, end: CGPoint)
     }
     
-    var gradientDirection: GradientDirection = .topToBottom
+    var gradientDirection: GradientDirection = .topToBottom {
+        didSet {
+            layoutSubviews()
+        }
+    }
     private var colors: [CGColor] = []
     
     override class var layerClass: AnyClass {

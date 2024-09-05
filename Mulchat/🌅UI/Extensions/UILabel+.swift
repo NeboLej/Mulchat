@@ -9,10 +9,18 @@ import UIKit
 
 extension UILabel {
     
-    convenience init(text: String, color: UIColor, font: UIFont) {
+    convenience init(text: String? = nil, color: UIColor? = nil, font: UIFont? = nil) {
         self.init()
-        self.text = text
-        self.textColor = color
-        self.font = font
+        if let text = text {
+            self.text = text
+        }
+        
+        if let color = color {
+            self.textColor = color
+        }
+        
+        if let font = font {
+            self.font = font
+        }
     }
 }
