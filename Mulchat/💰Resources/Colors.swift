@@ -19,6 +19,7 @@ extension UIColor {
         static let textDark = UIColor(resource: .textDark)
         static let textDescription = UIColor(resource: .textDescription)
         static let textError = UIColor(resource: .textError)
+        static let glass = UIColor(resource: .glass)
     }
     
 }
