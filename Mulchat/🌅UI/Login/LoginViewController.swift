@@ -16,8 +16,8 @@ final class LoginViewController: BaseViewController<LoginViewModel, LoginView> {
         
         rootView.segmentControlView.addTarget(self, action: #selector(controlTap), for: .valueChanged)
         
-        rootView.loginTextField.validator = viewModel
-        rootView.loginTextField.delegte = self
+        rootView.autorizeLoginTextField.validator = viewModel
+        rootView.autorizeLoginTextField.delegte = self
     }
     
     override func setBindings() {
@@ -32,6 +32,7 @@ final class LoginViewController: BaseViewController<LoginViewModel, LoginView> {
 extension LoginViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
+        rootView.autorizeformView.onFocus()
         UIView.animate(withDuration: 1) {
             self.rootView.backgroundGradientView.gradientDirection = .custom(start: .init(x: 0.5, y: 0.2), end: .init(x: 0.5, y: 1))
         }
@@ -39,6 +40,7 @@ extension LoginViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        rootView.autorizeformView.onFocus()
         UIView.animate(withDuration: 1) {
             self.rootView.backgroundGradientView.gradientDirection = .topToBottom
         }
