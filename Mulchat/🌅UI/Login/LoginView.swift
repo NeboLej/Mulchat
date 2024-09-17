@@ -58,6 +58,20 @@ final class LoginView: BaseView {
     lazy var registerLoginTextField = MCTextField(title: "Логин", placeholder: "mulchat@pro.com")
     lazy var registerPasswordTextField = MCTextField(title: "Пароль", placeholder: "")
     
+    
+    func changedSegmentAnimate(index: Int) {
+        UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut]) {
+            self.registerformView.snp.updateConstraints { make in
+                make.centerX.equalToSuperview().offset(index == 1 ? 0 : 500)
+            }
+            
+            self.autorizeformView.snp.updateConstraints { make in
+                make.centerX.equalToSuperview().offset(index == 1 ? -500 : 0)
+            }
+            self.layoutIfNeeded()
+        }
+    }
+    
     override func setupConstraints() {
         super.setupConstraints()
 
@@ -91,8 +105,8 @@ final class LoginView: BaseView {
         
         autorizeformView.snp.makeConstraints { make in
             make.top.equalTo(segmentControlView.snp.bottom).offset(40)
-            make.centerX.equalToSuperview()
-            make.left.right.equalToSuperview().inset(28)
+            make.width.equalTo(segmentControlView)
+            make.centerX.equalToSuperview().offset(0)
         }
         
         autorizeLoginTextField.snp.makeConstraints { make in
@@ -108,7 +122,7 @@ final class LoginView: BaseView {
         
         registerformView.snp.makeConstraints { make in
             make.top.equalTo(segmentControlView.snp.bottom).offset(40)
-            make.height.equalTo(autorizeformView)
+            make.height.width.equalTo(autorizeformView)
             make.centerX.equalToSuperview().offset(500)
         }
         
@@ -122,15 +136,5 @@ final class LoginView: BaseView {
             make.left.right.equalToSuperview().inset(20)
             make.bottom.equalToSuperview().inset(40)
         }
-    }
-}
-
-extension UIView {
-    func applyBlurEffect(_ style: UIBlurEffect.Style = .dark) {
-        let blurEffect = UIBlurEffect(style: style)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = bounds
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        addSubview(blurEffectView)
     }
 }

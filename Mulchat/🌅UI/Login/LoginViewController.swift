@@ -24,8 +24,8 @@ final class LoginViewController: BaseViewController<LoginViewModel, LoginView> {
         super.setBindings()
     }
     
-    @objc private func controlTap() {
-        
+    @objc private func controlTap(_ sender: UISegmentedControl) {
+        rootView.changedSegmentAnimate(index: sender.selectedSegmentIndex)
     }
 }
 

@@ -16,14 +16,14 @@ extension UIView {
 
 extension UIView {
     func addInnerShadow(to edges: [UIRectEdge], radius: CGFloat = 5.0, opacity: CGFloat = 0.5, color: UIColor = UIColor.black) {
-
+        
         let fromColor = color.withAlphaComponent(opacity).cgColor
         let toColor = UIColor.clear.cgColor
         let viewFrame = self.frame
         for edge in edges {
             let gradientLayer = CAGradientLayer()
             gradientLayer.colors = [fromColor, toColor]
-
+            
             switch edge {
             case .top:
                 gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
@@ -47,12 +47,24 @@ extension UIView {
             self.layer.addSublayer(gradientLayer)
         }
     }
-
+    
     func removeAllShadows() {
         if let sublayers = self.layer.sublayers, !sublayers.isEmpty {
             for sublayer in sublayers {
                 sublayer.removeFromSuperlayer()
             }
         }
+    }
+}
+
+extension UIView {
+    func shake(){
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.07
+        animation.repeatCount = 3
+        animation.autoreverses = true
+        animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x - 10, y: self.center.y))
+        animation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x + 10, y: self.center.y))
+        self.layer.add(animation, forKey: "position")
     }
 }
