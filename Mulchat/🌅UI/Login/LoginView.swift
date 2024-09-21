@@ -58,6 +58,18 @@ final class LoginView: BaseView {
     lazy var registerLoginTextField = MCTextField(title: "Логин", placeholder: "mulchat@pro.com")
     lazy var registerPasswordTextField = MCTextField(title: "Пароль", placeholder: "")
     
+    lazy var triangleAnimationView: TriangleAnimationView = {
+        let view = TriangleAnimationView()
+        view.transform = view.transform.rotated(by: CGFloat.pi * -0.07)
+        return view
+    }()
+    
+    lazy var doneButton: MCButton = {
+        let button = MCButton()
+        button.setTitle("ASDAS", for: .normal)
+        button.backgroundColor = .red
+        return button
+    }()
     
     func changedSegmentAnimate(index: Int) {
         UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut]) {
@@ -75,7 +87,7 @@ final class LoginView: BaseView {
     override func setupConstraints() {
         super.setupConstraints()
 
-        addSubviews([backgroundGradientView, backgroundAnimateView, firstHalfTitleLab, secondHalfTitleLab, segmentControlView, autorizeformView, registerformView])
+        addSubviews([backgroundGradientView, backgroundAnimateView, firstHalfTitleLab, secondHalfTitleLab, triangleAnimationView, segmentControlView, autorizeformView, registerformView, doneButton])
         autorizeformView.addSubviews([autorizeLoginTextField, autoruzePasswordTextField])
         registerformView.addSubviews([registerLoginTextField, registerPasswordTextField])
         
@@ -101,6 +113,12 @@ final class LoginView: BaseView {
             make.top.equalTo(secondHalfTitleLab.snp.bottom).offset(36)
             make.left.right.equalToSuperview().inset(28)
             make.height.equalTo(30)
+        }
+        
+        triangleAnimationView.snp.makeConstraints { make in
+            make.top.equalTo(segmentControlView.snp.bottom).offset(40)
+            make.left.right.equalToSuperview()
+            make.height.equalTo(200)
         }
         
         autorizeformView.snp.makeConstraints { make in
@@ -135,6 +153,12 @@ final class LoginView: BaseView {
             make.top.equalTo(registerLoginTextField.snp.bottom).offset(16)
             make.left.right.equalToSuperview().inset(20)
             make.bottom.equalToSuperview().inset(40)
+        }
+        
+        doneButton.snp.makeConstraints { make in
+            make.left.right.equalToSuperview().inset(28)
+            make.bottom.equalTo(safeAreaLayoutGuide.snp.bottom).inset(40)
+            make.height.equalTo(50)
         }
     }
 }

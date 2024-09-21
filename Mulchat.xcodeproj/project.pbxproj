@@ -35,6 +35,8 @@
 		8E1830A62C7E5CC6002EEF6B /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 8E1830A52C7E5CC6002EEF6B /* RxRelay */; };
 		8E1830A82C7E5CCD002EEF6B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8E1830A72C7E5CCD002EEF6B /* RxSwift */; };
 		8E6456A12C8F7B5C00D019F6 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6456A02C8F7B5C00D019F6 /* FormView.swift */; };
+		8E67F9ED2C99DDE700869F67 /* MCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67F9EC2C99DDE700869F67 /* MCButton.swift */; };
+		8E67F9EF2C9F6F4A00869F67 /* TriangleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67F9EE2C9F6F4A00869F67 /* TriangleAnimationView.swift */; };
 		8EC313EA2C90EC82008A4864 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC313E92C90EC82008A4864 /* UIImage+.swift */; };
 		8EC313EC2C90ECC4008A4864 /* MCSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC313EB2C90ECC4008A4864 /* MCSegmentControl.swift */; };
 		8ECD381A2C8A309B0005D82A /* MCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD38192C8A309B0005D82A /* MCTextField.swift */; };
@@ -81,6 +83,8 @@
 		8E18309D2C7E33A0002EEF6B /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		8E1830A02C7E5AF3002EEF6B /* LifecycleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleService.swift; sourceTree = "<group>"; };
 		8E6456A02C8F7B5C00D019F6 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		8E67F9EC2C99DDE700869F67 /* MCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCButton.swift; sourceTree = "<group>"; };
+		8E67F9EE2C9F6F4A00869F67 /* TriangleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleAnimationView.swift; sourceTree = "<group>"; };
 		8EC313E92C90EC82008A4864 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		8EC313EB2C90ECC4008A4864 /* MCSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCSegmentControl.swift; sourceTree = "<group>"; };
 		8ECD38192C8A309B0005D82A /* MCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCTextField.swift; sourceTree = "<group>"; };
@@ -214,6 +218,8 @@
 				8ECD381B2C8A42330005D82A /* InsetsTextField.swift */,
 				8ECD381D2C8A42DF0005D82A /* BackgroundAnimateView.swift */,
 				8E6456A02C8F7B5C00D019F6 /* FormView.swift */,
+				8E67F9EC2C99DDE700869F67 /* MCButton.swift */,
+				8E67F9EE2C9F6F4A00869F67 /* TriangleAnimationView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -333,6 +339,7 @@
 				8E18309E2C7E33A0002EEF6B /* UILabel+.swift in Sources */,
 				8ECD381A2C8A309B0005D82A /* MCTextField.swift in Sources */,
 				8E18306B2C7CF929002EEF6B /* BaseView.swift in Sources */,
+				8E67F9EF2C9F6F4A00869F67 /* TriangleAnimationView.swift in Sources */,
 				8E1830802C7D0363002EEF6B /* LoginViewController.swift in Sources */,
 				8EC313EC2C90ECC4008A4864 /* MCSegmentControl.swift in Sources */,
 				8E18304D2C7CD695002EEF6B /* AppDelegate.swift in Sources */,
@@ -345,6 +352,7 @@
 				8EC313EA2C90EC82008A4864 /* UIImage+.swift in Sources */,
 				8E6456A12C8F7B5C00D019F6 /* FormView.swift in Sources */,
 				8E1830822C7D0370002EEF6B /* LoginViewModel.swift in Sources */,
+				8E67F9ED2C99DDE700869F67 /* MCButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
