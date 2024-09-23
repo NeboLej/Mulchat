@@ -14,6 +14,8 @@ final class FormView: UIView {
         drawFillShape()
         drawStrokeShape()
         
+        addOuterShadows()
+        
         startAnimation()
     }
     

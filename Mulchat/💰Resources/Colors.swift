@@ -12,6 +12,7 @@ extension UIColor {
     struct MC {
         static let background_2 = UIColor(resource: .background2)
         static let background_3 = UIColor(resource: .background3)
+        static let background_4 = UIColor(resource: .background4)
         static let backgroundError = UIColor(resource: .backgroundError)
         static let accent_1 = UIColor(resource: .accent1)
         static let accent_2 = UIColor(resource: .accent2)

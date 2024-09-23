@@ -66,8 +66,9 @@ final class LoginView: BaseView {
     
     lazy var doneButton: MCButton = {
         let button = MCButton()
-        button.setTitle("ASDAS", for: .normal)
-        button.backgroundColor = .red
+        let string = NSAttributedString(string: "ВХОД", attributes: [NSAttributedString.Key.foregroundColor: UIColor.MC.textDark, NSAttributedString.Key.font: UIFont.get(type: .ubuntuLight, size: 14)])
+        button.setAttributedTitle(string, for: .normal)
+        button.addOuterShadows()
         return button
     }()
     
@@ -158,7 +159,7 @@ final class LoginView: BaseView {
         doneButton.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(28)
             make.bottom.equalTo(safeAreaLayoutGuide.snp.bottom).inset(40)
-            make.height.equalTo(50)
+            make.height.equalTo(45)
         }
     }
 }

@@ -15,6 +15,14 @@ extension UIView {
 }
 
 extension UIView {
+    
+    func addOuterShadows(color: UIColor = UIColor.black, radius: CGFloat = 4.0, opacity: Float = 0.25, offset: CGSize = CGSize(width: 0, height: 4)) {
+        layer.shadowColor = color.cgColor
+        layer.shadowRadius = radius
+        layer.shadowOpacity = opacity
+        layer.shadowOffset = offset
+    }
+    
     func addInnerShadow(to edges: [UIRectEdge], radius: CGFloat = 5.0, opacity: CGFloat = 0.5, color: UIColor = UIColor.black) {
         
         let fromColor = color.withAlphaComponent(opacity).cgColor
