@@ -18,25 +18,33 @@ final class MCButton: UIButton {
         }
     }
     
-    init() {
-        super.init(frame: .zero)
-        drawButton()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func drawButton() {
-        
+    private lazy var bgImage: UIImageView = {
         let bgImage = UIImageView(image: .init(named: "MCButton"))
-        insertSubview(bgImage, at: 0)
         bgImage.contentMode = .scaleAspectFill
-        
+        return bgImage
+    }()
+    
+    private lazy var bgView: UIView = {
         let bgView = UIView()
         bgView.isUserInteractionEnabled = false
         bgView.backgroundColor = UIColor.MC.background_4
+        return bgView
+    }()
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setupConstraints()
+        addOuterShadows()
+    }
+    
+    func setTitle(text: String, textColor: UIColor, font: UIFont) {
+        let string = NSAttributedString(string: text, attributes: [NSAttributedString.Key.foregroundColor: textColor, NSAttributedString.Key.font: font])
+        setAttributedTitle(string, for: .normal)
+    }
+    
+    private func setupConstraints() {
         insertSubview(bgView, at: 0)
+        insertSubview(bgImage, at: 1)
         
         bgView.snp.makeConstraints { make in
             make.center.equalToSuperview()

@@ -65,11 +65,8 @@ final class LoginView: BaseView {
     }()
     
     lazy var doneButton: MCButton = {
-//        let hh = UIButton(type: <#T##UIButton.ButtonType#>)
         let button = MCButton()
-        let string = NSAttributedString(string: "ВХОД", attributes: [NSAttributedString.Key.foregroundColor: UIColor.MC.textDark, NSAttributedString.Key.font: UIFont.get(type: .ubuntuLight, size: 14)])
-        button.setAttributedTitle(string, for: .normal)
-        button.addOuterShadows()
+        button.setTitle(text: "ВХОД", textColor: UIColor.MC.textDark, font: UIFont.get(type: .ubuntuLight, size: 14))
         return button
     }()
     

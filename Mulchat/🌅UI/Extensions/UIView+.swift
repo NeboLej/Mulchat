@@ -14,8 +14,9 @@ extension UIView {
     }
 }
 
+
+//MARK: - Shadows
 extension UIView {
-    
     func addOuterShadows(color: UIColor = UIColor.black, radius: CGFloat = 4.0, opacity: Float = 0.25, offset: CGSize = CGSize(width: 0, height: 4)) {
         layer.shadowColor = color.cgColor
         layer.shadowRadius = radius
@@ -65,6 +66,7 @@ extension UIView {
     }
 }
 
+//MARK: - Animate
 extension UIView {
     func shake(){
         let animation = CABasicAnimation(keyPath: "position")

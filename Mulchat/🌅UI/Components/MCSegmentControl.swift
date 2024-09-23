@@ -19,8 +19,7 @@ final class MCSegmentControl: UISegmentedControl {
         layer.cornerRadius = bounds.height/2
         //foreground
         let foregroundIndex = numberOfSegments
-        if subviews.indices.contains(foregroundIndex), let foregroundImageView = subviews[foregroundIndex] as? UIImageView
-        {
+        if subviews.indices.contains(foregroundIndex), let foregroundImageView = subviews[foregroundIndex] as? UIImageView {
             foregroundImageView.bounds = foregroundImageView.bounds.insetBy(dx: segmentInset, dy: segmentInset)
             foregroundImageView.image = segmentImage
             foregroundImageView.layer.removeAnimation(forKey: "SelectionBounds")

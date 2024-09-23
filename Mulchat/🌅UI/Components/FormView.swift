@@ -9,6 +9,8 @@ import UIKit
 
 final class FormView: UIView {
     
+    private var strokeShapeLayer: CAShapeLayer?
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         drawFillShape()
@@ -26,13 +28,13 @@ final class FormView: UIView {
     private func startAnimation() {
         let animation = CABasicAnimation(keyPath: "strokeColor")
         animation.duration = 0.2
-        animation.beginTime = CACurrentMediaTime() + 2
+        animation.beginTime = CACurrentMediaTime() + 1
         animation.fromValue = UIColor.MC.accent_2.withAlphaComponent(0.2).cgColor
         animation.toValue = UIColor.MC.accent_2.cgColor
         animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation.repeatCount = 2
 
-        drawStrokeShapeLayer?.add(animation, forKey: "loadingAnimation")
+        strokeShapeLayer?.add(animation, forKey: "loadingAnimation")
     }
     
     private func drawFillShape() {
@@ -47,23 +49,21 @@ final class FormView: UIView {
         shapeLayer.path = path.cgPath
     }
     
-    var drawStrokeShapeLayer: CAShapeLayer?
-    
     private func drawStrokeShape() {
         
-        drawStrokeShapeLayer = CAShapeLayer()
+        strokeShapeLayer = CAShapeLayer()
         
-        guard let drawStrokeShapeLayer else { return }
-        drawStrokeShapeLayer.frame = self.bounds
-        drawStrokeShapeLayer.fillColor = UIColor.clear.cgColor
-        drawStrokeShapeLayer.strokeColor = UIColor.MC.accent_2.cgColor
-        drawStrokeShapeLayer.lineWidth = 3
+        guard let strokeShapeLayer else { return }
+        strokeShapeLayer.frame = self.bounds
+        strokeShapeLayer.fillColor = UIColor.clear.cgColor
+        strokeShapeLayer.strokeColor = UIColor.MC.accent_2.cgColor
+        strokeShapeLayer.lineWidth = 3
         
-        self.layer.insertSublayer(drawStrokeShapeLayer, at: 1)
+        self.layer.insertSublayer(strokeShapeLayer, at: 1)
         
         let path = createPath()
         
-        drawStrokeShapeLayer.path = path.cgPath
+        strokeShapeLayer.path = path.cgPath
     }
     
     private func createPath() -> UIBezierPath {
