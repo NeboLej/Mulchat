@@ -28,22 +28,22 @@ final class MCButton: UIButton {
     
     private func drawButton() {
 
-        let firstImage = UIImageView(image: .init(named: "MCButton"))
-        insertSubview(firstImage, at: 0)
-        firstImage.contentMode = .scaleAspectFill
+        let bgImage = UIImageView(image: .init(named: "MCButton"))
+        insertSubview(bgImage, at: 0)
+        bgImage.contentMode = .scaleAspectFill
         
-        let centerView = UIView()
-        centerView.isUserInteractionEnabled = false
-        centerView.backgroundColor = UIColor.MC.background_4
-        insertSubview(centerView, at: 0)
+        let bgView = UIView()
+        bgView.isUserInteractionEnabled = false
+        bgView.backgroundColor = UIColor.MC.background_4
+        insertSubview(bgView, at: 0)
         
-        centerView.snp.makeConstraints { make in
+        bgView.snp.makeConstraints { make in
             make.center.equalToSuperview()
             make.height.equalToSuperview().multipliedBy(0.8)
             make.width.equalToSuperview().multipliedBy(0.9)
         }
         
-        firstImage.snp.makeConstraints { make in
+        bgImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
     }
