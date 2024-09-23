@@ -6,20 +6,21 @@
 //
 
 import UIKit
-import RxSwift
 import SnapKit
 
 final class MCButton: UIButton {
     
-    private var dispBag = DisposeBag()
+    override var isHighlighted: Bool {
+        willSet(newVal) {
+            UIView.animate(withDuration: 0.2, delay: 0) {
+                self.transform = newVal ? self.transform.scaledBy(x: 0.95, y: 0.95) : .identity
+            }
+        }
+    }
     
     init() {
         super.init(frame: .zero)
         drawButton()
-        
-        rx.tap.throttle(.seconds(2), scheduler: MainScheduler.instance)
-            .bind(onNext: { [weak self] in self?.onClickAnimate() })
-            .disposed(by: dispBag)
     }
     
     required init?(coder: NSCoder) {
@@ -27,7 +28,7 @@ final class MCButton: UIButton {
     }
     
     private func drawButton() {
-
+        
         let bgImage = UIImageView(image: .init(named: "MCButton"))
         insertSubview(bgImage, at: 0)
         bgImage.contentMode = .scaleAspectFill
@@ -45,14 +46,6 @@ final class MCButton: UIButton {
         
         bgImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
-        }
-    }
-    
-    private func onClickAnimate() {
-        UIView.animate(withDuration: 0.2, delay: 0, options: [.autoreverse]) {
-            self.transform = self.transform.scaledBy(x: 0.95, y: 0.95)
-        } completion: { _ in
-            self.transform = .identity
         }
     }
 }
