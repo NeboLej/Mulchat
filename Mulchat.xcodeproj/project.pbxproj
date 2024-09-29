@@ -9,21 +9,87 @@
 /* Begin PBXBuildFile section */
 		8E18304D2C7CD695002EEF6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18304C2C7CD695002EEF6B /* AppDelegate.swift */; };
 		8E18304F2C7CD695002EEF6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18304E2C7CD695002EEF6B /* SceneDelegate.swift */; };
-		8E1830512C7CD695002EEF6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1830502C7CD695002EEF6B /* ViewController.swift */; };
 		8E1830562C7CD696002EEF6B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1830552C7CD696002EEF6B /* Colors.xcassets */; };
 		8E1830592C7CD696002EEF6B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E1830582C7CD696002EEF6B /* Base */; };
 		8E1830642C7CD9F5002EEF6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1830632C7CD9F5002EEF6B /* Images.xcassets */; };
+		8E1830672C7CF918002EEF6B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1830662C7CF918002EEF6B /* BaseViewController.swift */; };
+		8E1830692C7CF921002EEF6B /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1830682C7CF921002EEF6B /* BaseViewModel.swift */; };
+		8E18306B2C7CF929002EEF6B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18306A2C7CF929002EEF6B /* BaseView.swift */; };
+		8E18306D2C7CFD2F002EEF6B /* UIComponentsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18306C2C7CFD2F002EEF6B /* UIComponentsContainer.swift */; };
+		8E18307A2C7CFED7002EEF6B /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 8E1830792C7CFED7002EEF6B /* Swinject */; };
+		8E1830802C7D0363002EEF6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18307F2C7D0363002EEF6B /* LoginViewController.swift */; };
+		8E1830822C7D0370002EEF6B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1830812C7D0370002EEF6B /* LoginViewModel.swift */; };
+		8E1830842C7D037B002EEF6B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1830832C7D037B002EEF6B /* LoginView.swift */; };
+		8E1830872C7D1FC1002EEF6B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8E1830862C7D1FC1002EEF6B /* SnapKit */; };
+		8E18308B2C7D2455002EEF6B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18308A2C7D2455002EEF6B /* Colors.swift */; };
+		8E18308D2C7D2602002EEF6B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18308C2C7D2602002EEF6B /* Fonts.swift */; };
+		8E1830932C7D27FC002EEF6B /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E18308F2C7D27FB002EEF6B /* Ubuntu-Regular.ttf */; };
+		8E1830942C7D27FC002EEF6B /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E1830902C7D27FC002EEF6B /* Ubuntu-Light.ttf */; };
+		8E1830952C7D27FC002EEF6B /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E1830912C7D27FC002EEF6B /* Ubuntu-Bold.ttf */; };
+		8E1830962C7D27FC002EEF6B /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E1830922C7D27FC002EEF6B /* Ubuntu-Medium.ttf */; };
+		8E1830992C7D2A84002EEF6B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1830982C7D2A84002EEF6B /* GradientView.swift */; };
+		8E18309C2C7E3307002EEF6B /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18309B2C7E3307002EEF6B /* UIView+.swift */; };
+		8E18309E2C7E33A0002EEF6B /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E18309D2C7E33A0002EEF6B /* UILabel+.swift */; };
+		8E1830A12C7E5AF3002EEF6B /* LifecycleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1830A02C7E5AF3002EEF6B /* LifecycleService.swift */; };
+		8E1830A42C7E5CC1002EEF6B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8E1830A32C7E5CC1002EEF6B /* RxCocoa */; };
+		8E1830A62C7E5CC6002EEF6B /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 8E1830A52C7E5CC6002EEF6B /* RxRelay */; };
+		8E1830A82C7E5CCD002EEF6B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8E1830A72C7E5CCD002EEF6B /* RxSwift */; };
+		8E6456A12C8F7B5C00D019F6 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6456A02C8F7B5C00D019F6 /* FormView.swift */; };
+		8E67F9ED2C99DDE700869F67 /* MCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67F9EC2C99DDE700869F67 /* MCButton.swift */; };
+		8E67F9EF2C9F6F4A00869F67 /* TriangleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67F9EE2C9F6F4A00869F67 /* TriangleAnimationView.swift */; };
+		8EC313EA2C90EC82008A4864 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC313E92C90EC82008A4864 /* UIImage+.swift */; };
+		8EC313EC2C90ECC4008A4864 /* MCSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC313EB2C90ECC4008A4864 /* MCSegmentControl.swift */; };
+		8ECD381A2C8A309B0005D82A /* MCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD38192C8A309B0005D82A /* MCTextField.swift */; };
+		8ECD381C2C8A42330005D82A /* InsetsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD381B2C8A42330005D82A /* InsetsTextField.swift */; };
+		8ECD381E2C8A42DF0005D82A /* BackgroundAnimateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD381D2C8A42DF0005D82A /* BackgroundAnimateView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E1830772C7CFDF9002EEF6B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8E1830492C7CD695002EEF6B /* Mulchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mulchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E18304C2C7CD695002EEF6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E18304E2C7CD695002EEF6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E1830502C7CD695002EEF6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8E1830552C7CD696002EEF6B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8E1830582C7CD696002EEF6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E18305A2C7CD696002EEF6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E1830632C7CD9F5002EEF6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8E1830662C7CF918002EEF6B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8E1830682C7CF921002EEF6B /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		8E18306A2C7CF929002EEF6B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		8E18306C2C7CFD2F002EEF6B /* UIComponentsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsContainer.swift; sourceTree = "<group>"; };
+		8E18307F2C7D0363002EEF6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8E1830812C7D0370002EEF6B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8E1830832C7D037B002EEF6B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8E18308A2C7D2455002EEF6B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8E18308C2C7D2602002EEF6B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		8E18308F2C7D27FB002EEF6B /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		8E1830902C7D27FC002EEF6B /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		8E1830912C7D27FC002EEF6B /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		8E1830922C7D27FC002EEF6B /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		8E1830982C7D2A84002EEF6B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		8E18309B2C7E3307002EEF6B /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		8E18309D2C7E33A0002EEF6B /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		8E1830A02C7E5AF3002EEF6B /* LifecycleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleService.swift; sourceTree = "<group>"; };
+		8E6456A02C8F7B5C00D019F6 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		8E67F9EC2C99DDE700869F67 /* MCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCButton.swift; sourceTree = "<group>"; };
+		8E67F9EE2C9F6F4A00869F67 /* TriangleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleAnimationView.swift; sourceTree = "<group>"; };
+		8EC313E92C90EC82008A4864 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		8EC313EB2C90ECC4008A4864 /* MCSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCSegmentControl.swift; sourceTree = "<group>"; };
+		8ECD38192C8A309B0005D82A /* MCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCTextField.swift; sourceTree = "<group>"; };
+		8ECD381B2C8A42330005D82A /* InsetsTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetsTextField.swift; sourceTree = "<group>"; };
+		8ECD381D2C8A42DF0005D82A /* BackgroundAnimateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAnimateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +97,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1830A42C7E5CC1002EEF6B /* RxCocoa in Frameworks */,
+				8E18307A2C7CFED7002EEF6B /* Swinject in Frameworks */,
+				8E1830A82C7E5CCD002EEF6B /* RxSwift in Frameworks */,
+				8E1830A62C7E5CC6002EEF6B /* RxRelay in Frameworks */,
+				8E1830872C7D1FC1002EEF6B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +113,7 @@
 			children = (
 				8E18304B2C7CD695002EEF6B /* Mulchat */,
 				8E18304A2C7CD695002EEF6B /* Products */,
+				8E1830732C7CFDF9002EEF6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,39 +128,118 @@
 		8E18304B2C7CD695002EEF6B /* Mulchat */ = {
 			isa = PBXGroup;
 			children = (
-				8E1830622C7CD944002EEF6B /* Resources */,
-				8E1830612C7CD939002EEF6B /* System */,
-				8E1830602C7CD92D002EEF6B /* UI */,
+				8E18309F2C7E5A90002EEF6B /* 🧠Services */,
+				8E1830622C7CD944002EEF6B /* 💰Resources */,
+				8E1830612C7CD939002EEF6B /* 💻System */,
+				8E1830602C7CD92D002EEF6B /* 🌅UI */,
 			);
 			path = Mulchat;
 			sourceTree = "<group>";
 		};
-		8E1830602C7CD92D002EEF6B /* UI */ = {
+		8E1830602C7CD92D002EEF6B /* 🌅UI */ = {
 			isa = PBXGroup;
 			children = (
-				8E1830502C7CD695002EEF6B /* ViewController.swift */,
+				8E18309A2C7E32FC002EEF6B /* Extensions */,
+				8E1830972C7D2A77002EEF6B /* Components */,
+				8E18307E2C7D0345002EEF6B /* Login */,
+				8E1830652C7CF883002EEF6B /* 🍺Base */,
 			);
-			path = UI;
+			path = "🌅UI";
 			sourceTree = "<group>";
 		};
-		8E1830612C7CD939002EEF6B /* System */ = {
+		8E1830612C7CD939002EEF6B /* 💻System */ = {
 			isa = PBXGroup;
 			children = (
 				8E18304C2C7CD695002EEF6B /* AppDelegate.swift */,
 				8E18304E2C7CD695002EEF6B /* SceneDelegate.swift */,
 				8E18305A2C7CD696002EEF6B /* Info.plist */,
 			);
-			path = System;
+			path = "💻System";
 			sourceTree = "<group>";
 		};
-		8E1830622C7CD944002EEF6B /* Resources */ = {
+		8E1830622C7CD944002EEF6B /* 💰Resources */ = {
 			isa = PBXGroup;
 			children = (
 				8E1830552C7CD696002EEF6B /* Colors.xcassets */,
 				8E1830632C7CD9F5002EEF6B /* Images.xcassets */,
 				8E1830572C7CD696002EEF6B /* LaunchScreen.storyboard */,
+				8E18308A2C7D2455002EEF6B /* Colors.swift */,
+				8E18308E2C7D2777002EEF6B /* Fonts */,
 			);
-			path = Resources;
+			path = "💰Resources";
+			sourceTree = "<group>";
+		};
+		8E1830652C7CF883002EEF6B /* 🍺Base */ = {
+			isa = PBXGroup;
+			children = (
+				8E1830662C7CF918002EEF6B /* BaseViewController.swift */,
+				8E1830682C7CF921002EEF6B /* BaseViewModel.swift */,
+				8E18306A2C7CF929002EEF6B /* BaseView.swift */,
+				8E18306C2C7CFD2F002EEF6B /* UIComponentsContainer.swift */,
+			);
+			path = "🍺Base";
+			sourceTree = "<group>";
+		};
+		8E1830732C7CFDF9002EEF6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E18307E2C7D0345002EEF6B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8E18307F2C7D0363002EEF6B /* LoginViewController.swift */,
+				8E1830812C7D0370002EEF6B /* LoginViewModel.swift */,
+				8E1830832C7D037B002EEF6B /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8E18308E2C7D2777002EEF6B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8E1830912C7D27FC002EEF6B /* Ubuntu-Bold.ttf */,
+				8E1830902C7D27FC002EEF6B /* Ubuntu-Light.ttf */,
+				8E1830922C7D27FC002EEF6B /* Ubuntu-Medium.ttf */,
+				8E18308F2C7D27FB002EEF6B /* Ubuntu-Regular.ttf */,
+				8E18308C2C7D2602002EEF6B /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8E1830972C7D2A77002EEF6B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8E1830982C7D2A84002EEF6B /* GradientView.swift */,
+				8EC313EB2C90ECC4008A4864 /* MCSegmentControl.swift */,
+				8ECD38192C8A309B0005D82A /* MCTextField.swift */,
+				8ECD381B2C8A42330005D82A /* InsetsTextField.swift */,
+				8ECD381D2C8A42DF0005D82A /* BackgroundAnimateView.swift */,
+				8E6456A02C8F7B5C00D019F6 /* FormView.swift */,
+				8E67F9EC2C99DDE700869F67 /* MCButton.swift */,
+				8E67F9EE2C9F6F4A00869F67 /* TriangleAnimationView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8E18309A2C7E32FC002EEF6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E18309B2C7E3307002EEF6B /* UIView+.swift */,
+				8E18309D2C7E33A0002EEF6B /* UILabel+.swift */,
+				8EC313E92C90EC82008A4864 /* UIImage+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8E18309F2C7E5A90002EEF6B /* 🧠Services */ = {
+			isa = PBXGroup;
+			children = (
+				8E1830A02C7E5AF3002EEF6B /* LifecycleService.swift */,
+			);
+			path = "🧠Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,12 +252,20 @@
 				8E1830452C7CD695002EEF6B /* Sources */,
 				8E1830462C7CD695002EEF6B /* Frameworks */,
 				8E1830472C7CD695002EEF6B /* Resources */,
+				8E1830772C7CFDF9002EEF6B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Mulchat;
+			packageProductDependencies = (
+				8E1830792C7CFED7002EEF6B /* Swinject */,
+				8E1830862C7D1FC1002EEF6B /* SnapKit */,
+				8E1830A32C7E5CC1002EEF6B /* RxCocoa */,
+				8E1830A52C7E5CC6002EEF6B /* RxRelay */,
+				8E1830A72C7E5CCD002EEF6B /* RxSwift */,
+			);
 			productName = Mulchat;
 			productReference = 8E1830492C7CD695002EEF6B /* Mulchat.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +294,12 @@
 				Base,
 			);
 			mainGroup = 8E1830402C7CD695002EEF6B;
+			packageReferences = (
+				8E1830782C7CFED7002EEF6B /* XCRemoteSwiftPackageReference "Swinject" */,
+				8E1830852C7D1FC1002EEF6B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				8E1830A22C7E5C8F002EEF6B /* XCRemoteSwiftPackageReference "RxSwift" */,
+				8E2BDA6A2CA1FA5800941DE1 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 8E18304A2C7CD695002EEF6B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,7 +314,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1830932C7D27FC002EEF6B /* Ubuntu-Regular.ttf in Resources */,
 				8E1830642C7CD9F5002EEF6B /* Images.xcassets in Resources */,
+				8E1830962C7D27FC002EEF6B /* Ubuntu-Medium.ttf in Resources */,
+				8E1830952C7D27FC002EEF6B /* Ubuntu-Bold.ttf in Resources */,
+				8E1830942C7D27FC002EEF6B /* Ubuntu-Light.ttf in Resources */,
 				8E1830562C7CD696002EEF6B /* Colors.xcassets in Resources */,
 				8E1830592C7CD696002EEF6B /* Base in Resources */,
 			);
@@ -162,9 +331,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E1830512C7CD695002EEF6B /* ViewController.swift in Sources */,
+				8E1830692C7CF921002EEF6B /* BaseViewModel.swift in Sources */,
+				8E18308B2C7D2455002EEF6B /* Colors.swift in Sources */,
+				8ECD381C2C8A42330005D82A /* InsetsTextField.swift in Sources */,
+				8E1830992C7D2A84002EEF6B /* GradientView.swift in Sources */,
+				8ECD381E2C8A42DF0005D82A /* BackgroundAnimateView.swift in Sources */,
+				8E1830672C7CF918002EEF6B /* BaseViewController.swift in Sources */,
+				8E18309E2C7E33A0002EEF6B /* UILabel+.swift in Sources */,
+				8ECD381A2C8A309B0005D82A /* MCTextField.swift in Sources */,
+				8E18306B2C7CF929002EEF6B /* BaseView.swift in Sources */,
+				8E67F9EF2C9F6F4A00869F67 /* TriangleAnimationView.swift in Sources */,
+				8E1830802C7D0363002EEF6B /* LoginViewController.swift in Sources */,
+				8EC313EC2C90ECC4008A4864 /* MCSegmentControl.swift in Sources */,
 				8E18304D2C7CD695002EEF6B /* AppDelegate.swift in Sources */,
+				8E18306D2C7CFD2F002EEF6B /* UIComponentsContainer.swift in Sources */,
 				8E18304F2C7CD695002EEF6B /* SceneDelegate.swift in Sources */,
+				8E18308D2C7D2602002EEF6B /* Fonts.swift in Sources */,
+				8E1830A12C7E5AF3002EEF6B /* LifecycleService.swift in Sources */,
+				8E18309C2C7E3307002EEF6B /* UIView+.swift in Sources */,
+				8E1830842C7D037B002EEF6B /* LoginView.swift in Sources */,
+				8EC313EA2C90EC82008A4864 /* UIImage+.swift in Sources */,
+				8E6456A12C8F7B5C00D019F6 /* FormView.swift in Sources */,
+				8E1830822C7D0370002EEF6B /* LoginViewModel.swift in Sources */,
+				8E67F9ED2C99DDE700869F67 /* MCButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,12 +499,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 955DP87LHM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Mulchat/system/Info.plist;
+				INFOPLIST_FILE = "Mulchat/💻System/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,12 +527,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 955DP87LHM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Mulchat/system/Info.plist;
+				INFOPLIST_FILE = "Mulchat/💻System/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +568,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8E1830782C7CFED7002EEF6B /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+		8E1830852C7D1FC1002EEF6B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		8E1830A22C7E5C8F002EEF6B /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+		8E2BDA6A2CA1FA5800941DE1 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8E1830792C7CFED7002EEF6B /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E1830782C7CFED7002EEF6B /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		8E1830862C7D1FC1002EEF6B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E1830852C7D1FC1002EEF6B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		8E1830A32C7E5CC1002EEF6B /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E1830A22C7E5C8F002EEF6B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		8E1830A52C7E5CC6002EEF6B /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E1830A22C7E5C8F002EEF6B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		8E1830A72C7E5CCD002EEF6B /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E1830A22C7E5C8F002EEF6B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8E1830412C7CD695002EEF6B /* Project object */;
 }
