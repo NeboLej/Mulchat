@@ -17,6 +17,7 @@ extension UIView {
 
 //MARK: - Shadows
 extension UIView {
+    
     func addOuterShadows(color: UIColor = UIColor.black, radius: CGFloat = 4.0, opacity: Float = 0.25, offset: CGSize = CGSize(width: 0, height: 4)) {
         layer.shadowColor = color.cgColor
         layer.shadowRadius = radius
@@ -25,10 +26,10 @@ extension UIView {
     }
     
     func addInnerShadow(to edges: [UIRectEdge], radius: CGFloat = 5.0, opacity: CGFloat = 0.5, color: UIColor = UIColor.black) {
-        
         let fromColor = color.withAlphaComponent(opacity).cgColor
         let toColor = UIColor.clear.cgColor
         let viewFrame = self.frame
+        
         for edge in edges {
             let gradientLayer = CAGradientLayer()
             gradientLayer.colors = [fromColor, toColor]
@@ -68,7 +69,8 @@ extension UIView {
 
 //MARK: - Animate
 extension UIView {
-    func shake(){
+    
+    func shake() {
         let animation = CABasicAnimation(keyPath: "position")
         animation.duration = 0.07
         animation.repeatCount = 3

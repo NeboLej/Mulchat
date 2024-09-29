@@ -17,10 +17,10 @@ final class LoginViewController: BaseViewController<LoginViewModel, LoginView> {
         rootView.segmentControlView.addTarget(self, action: #selector(controlTap), for: .valueChanged)
         
         rootView.autorizeLoginTextField.validator = viewModel
-        rootView.autorizeLoginTextField.delegte = self
-        rootView.autoruzePasswordTextField.delegte = self
-        rootView.registerLoginTextField.delegte = self
-        rootView.registerPasswordTextField.delegte = self
+        rootView.autorizeLoginTextField.delegate = self
+        rootView.autorizePasswordTextField.delegate = self
+        rootView.registerLoginTextField.delegate = self
+        rootView.registerPasswordTextField.delegate = self
     }
     
     override func setBindings() {

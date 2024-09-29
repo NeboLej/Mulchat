@@ -48,7 +48,7 @@ final class LoginView: BaseView {
     }()
     
     lazy var autorizeLoginTextField = MCTextField(title: "Логин", placeholder: "mulchat@pro.com")
-    lazy var autoruzePasswordTextField = MCTextField(title: "Пароль", placeholder: "")
+    lazy var autorizePasswordTextField = MCTextField(title: "Пароль", placeholder: "")
     
     var registerformView: FormView = {
         let view = FormView()
@@ -87,7 +87,7 @@ final class LoginView: BaseView {
         super.setupConstraints()
 
         addSubviews([backgroundGradientView, backgroundAnimateView, firstHalfTitleLab, secondHalfTitleLab, triangleAnimationView, segmentControlView, autorizeformView, registerformView, doneButton])
-        autorizeformView.addSubviews([autorizeLoginTextField, autoruzePasswordTextField])
+        autorizeformView.addSubviews([autorizeLoginTextField, autorizePasswordTextField])
         registerformView.addSubviews([registerLoginTextField, registerPasswordTextField])
         
         backgroundGradientView.snp.makeConstraints { make in
@@ -131,7 +131,7 @@ final class LoginView: BaseView {
             make.left.right.equalToSuperview().inset(20)
         }
         
-        autoruzePasswordTextField.snp.makeConstraints { make in
+        autorizePasswordTextField.snp.makeConstraints { make in
             make.top.equalTo(autorizeLoginTextField.snp.bottom).offset(16)
             make.left.right.equalToSuperview().inset(20)
             make.bottom.equalToSuperview().inset(40)

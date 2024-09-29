@@ -20,9 +20,9 @@ protocol TextFieldValidatorProtocol: AnyObject {
 final class MCTextField: UIView {
     
     weak var validator: TextFieldValidatorProtocol?
-    weak var delegte: UITextFieldDelegate? {
+    weak var delegate: UITextFieldDelegate? {
         didSet {
-            textField.delegate = delegte
+            textField.delegate = delegate
         }
     }
     
@@ -48,9 +48,9 @@ final class MCTextField: UIView {
     }()
     
     func set(title: String? = nil, text: String? = nil, error: String? = nil) {
-        if let title = title { titleLab.text = title }
-        if let text = text { textField.text = text }
-        if let error = error { errorLab.text = error }
+        if let title { titleLab.text = title }
+        if let text { textField.text = text }
+        if let error { errorLab.text = error }
     }
     
     init(title: String, placeholder: String) {
