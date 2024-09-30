@@ -9,6 +9,7 @@ import UIKit
 
 final class BackgroundAnimateView: UIView {
     
+    
     private lazy var views: [UIView] = []
     
     override func layoutSubviews() {
